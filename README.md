@@ -10,7 +10,7 @@ We all have this friend or family member who always tend to lie in their stories
 - The user can let the story continue or modify the narrative during the story
 
 ## Demo
-You can see a demo directly on []
+You can see a demo directly on [https://llm-rpg.vercel.app](https://llm-rpg.vercel.app)
 ## Setup
 
 1. **Clone the repository**:
