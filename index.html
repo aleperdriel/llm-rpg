@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM RPG: your big adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id = "neon">THE BIGGEST LLIAR</h1>
+        <div>
+            <form id="context-form" onkeydown="if(event.keyCode === 13) { event.preventDefault();}">
+                <label>Who are you talking to ?</label>
+                <input id="person-input" type="text" placeholder="My 20 year-old best friend"/>
+                
+                <label>Ask about a recent event of their life</label>
+                <input id="context-input" type="text" placeholder="How was your date last night ?"/>
+                <button id="context-btn" type="submit">Send</button>
+            </form>
+            <progress id="progress-bar" max="100" value="0"></progress>
+
+            <!-- <p id="rpg-text"></p> -->
+            <form onkeydown="if(event.keyCode === 13) { event.preventDefault();}">
+                <input type="text"/>
+                <button id="send-btn" type="submit">Send</button>
+                <button id="go-btn" type="submit">Keep going</button>
+                <button id="stop-btn" type="submit">Stop it</button>
+            </form>
+        </div>
+        <div class="container">
+            
+            <div class="imessage">
+                <p id="rpg-text" class="from-them"></p>
+
+            </div>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
