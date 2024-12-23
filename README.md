@@ -48,9 +48,9 @@ Due to problems relative to CORS policies, it may be easier for you to use a loc
 ## How to play
 
 1. **Initialization**: Wait for the game to load the WebLLM model
-2. **Context Settings**: Specify who is the liar and ask him about a recent event
+2. **Context Settings**: Specify who is the liar and ask them about a recent event
 3. **Message Flow**: The liar starts their story, and will keep going without questioning it, unless you tell them something's wrong!
-4. **Change the story**: Click on the "No wayy" button to get different choices for the next step of the story
+4. **Change the story**: Click on the "Change" button to get different choices for the next step of the story
 5. **See where the story goes**: Enjoy the crazy and unpredictable story
 
 ## Technologies Used
