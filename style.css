@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+  min-height: 100vh;
+}
 main {
     text-align: center;
     width: 100%;
@@ -13,17 +16,19 @@ body {
     background-color: #111;
     color: #eee;
     font-family: calibri;
+   min-height: 100%;
+
 }
 
-  
 #progress-bar {
     width: 80%;
+    max-width: 800px;
     margin: 20px auto;
-    background-color: orange;
+    background-color: #248bf5;
 }
 
-progress::-moz-progress-bar { background-color: orange; }
-progress::-webkit-progress-value { background-color: orange; }
+progress::-moz-progress-bar { background-color:  #248bf5; }
+progress::-webkit-progress-value { background-color:  #248bf5; }
 
 @font-face{
 font-family: neon;
@@ -33,21 +38,68 @@ src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0)
 
 #context-form > * {
     display: block;
-    margin: 5px auto ;
+    margin: 15px auto ;
 }
+
+#context-form > button {
+  color: #fff;
+  border: 1px solid #248bf5;
+  padding: 5px 10px;
+}
+
 #context-form > input {
+  width: 70%;
+  max-width: 800px;
+
+}
+
+form input {
     color: #fff;
     border: none;
     border-bottom: 1px solid #248bf5;
     background-color: transparent;
 }
 
-#context-form > input:focus{
+form > input:focus{
     outline: none;
 }
 
+form button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
 
+#msg-form {
+  display: flex;
+}
+#msg-form > div {
+  width: 30%;
+}
 
+#msg-form > input {
+  width: 70%;
+}
+
+#msg-form button {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #248bf5;
+}
+.hidden {
+  display: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: rgb(60, 60, 60);
+  color: darkgray;
+}
+
+/* iMessage CSS by Matt Smith */
 .imessage {
     background-color: #fff;
     border: 1px solid #e5e5ea;
@@ -55,11 +107,13 @@ src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0)
     display: flex;
     flex-direction: column;
     font-family: "SanFrancisco";
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0 auto 1rem;
-    max-width: 600px;
+    max-width: 800px;
     padding: 0.5rem 1.5rem;
+    min-height: 100px;
   }
+
   
   .imessage p {
     border-radius: 1.15rem;
@@ -161,19 +215,14 @@ src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0)
   .margin-t_one {
     margin-top: 1rem !important;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  .imessage > form {
+    width: 100%;
+  }
+
+  .imessage > input {
+    display: flex;
+  }
   
   /* general styling */
   @font-face {
@@ -201,6 +250,7 @@ src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0)
     margin: 0 auto;
     max-width: 600px;
     padding: 1rem;
+    overflow: auto;
   }
   
   h1 {
@@ -209,11 +259,12 @@ src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0)
   }
   
   h2 {
-    border-bottom: 1px solid #e5e5ea;
     color: #666;
     font-weight: normal;
-    margin-top: 0;
+    position: absolute;
+    top: 30%;
     padding-bottom: 1.5rem;
+    font-size: 3rem;
   }
   
   .comment {
@@ -245,4 +296,19 @@ src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0)
       margin: 0.5rem 0;
     }
   }
+
+
+
+  .fadeout-msg {
+    opacity: 0;
+    transition: 1s opacity;
+  }
+
+  
+  .fadein-msg {
+    opacity: 1;
+    transition: 1.5s opacity;
+  }
+
+
 
