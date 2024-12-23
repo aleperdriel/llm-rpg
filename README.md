@@ -55,7 +55,7 @@ Due to problems relative to CORS policies, it may be easier for you to use a loc
 
 ## Technologies Used
 
-- WebLLM for in-browser inference
+- WebLLM for in-browser inference, using **Llama-3.2-1B-Instruct**
 - HTML5 for basic structure
 - CSS for styling
 - Native JavaScript for interaction and logic
