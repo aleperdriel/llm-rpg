@@ -11,6 +11,11 @@ We all have this friend or family member who always tend to lie in their stories
 
 ## Demo
 You can see a demo directly on [https://llm-rpg.vercel.app](https://llm-rpg.vercel.app)
+
+![Demo of the app](images/lliar_screen_3.png)
+----
+----
+![Demo of the app](images/lliar_screen_2.png)
 ## Setup
 
 1. **Clone the repository**:
@@ -26,19 +31,19 @@ You can see a demo directly on [https://llm-rpg.vercel.app](https://llm-rpg.verc
     npm install
     ```
 
-4. **Run the local server**
-    ```bash
-    npm run dev
-    ```
+4. **Run using Live Server** <br>
+Due to problems relative to CORS policies, it may be easier for you to use a local server, such as the one provided by the Visual Studio Code Extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Just click on `Go Live` on the bottom left of VS Code to start using it.
+
 5. **Open the game in your browser**:
-    - Go to `http://localhost:8000` (or the appropriate port if you used a different server).
+    - Go to `http://localhost:5500` (or the appropriate port if you used a different server).
 
 
 ## Project Structure
 
 - `index.html`: Simple HTML file containing the structure of the page
-- `app.js`: Javascript file handling interactions with the WebLLM API, updating the story, and getting the different user inputs and interactions
+- `script.js`: Javascript file handling interactions with the WebLLM API, updating the story, and getting the different user inputs and interactions
 - `style.css`: CSS file for styling the game UI
+- `package.json` and `package-lock.json`: Config files for node
 
 ## How to play
 

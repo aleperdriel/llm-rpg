@@ -263,6 +263,8 @@ button:disabled {
     font-weight: normal;
     position: absolute;
     top: 30%;
+    left: 25%;
+    right: 25%;
     padding-bottom: 1.5rem;
     font-size: 3rem;
   }

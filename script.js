@@ -23,6 +23,9 @@ let isLoading = true;
 let timer;
 let timerEnd;
 
+// Change here if you want shorter or longer stories
+let max_turn_nbr = 15;
+
 
 text.innerText = "Loading now";
 console.log("WebLLM loaded successfully!");
@@ -196,7 +199,7 @@ async function sendPrompt() {
                 endGame();
                 break;
             }
-            if(messages.length >= 5) {
+            if(messages.length >= max_turn_nbr) {
                 createEnding();
             }
 
