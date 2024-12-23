@@ -1,6 +1,6 @@
 # The biggest Lliar
 
-We all have this friend or family member who always tend to lie in their stories... or at least exagerate every part of it. You know whay kind of people I am talking about. Push them in their craziness in this multiple choice story where you influence the liar!
+We all have this friend or family member who always tend to lie in their stories... or at least exagerate every part of it. You know what kind of people I am talking about. Push them in their craziness in this multiple choice story where you influence the liar!
 
 ## Features
 
